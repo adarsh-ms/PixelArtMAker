@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Pixel Art Maker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="http://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="designs.js"></script>
+
+</head>
+
+<body class="backgroundGradient">
+
+  <div id="welcomePage">
+
+    <h1 id="titlePixelArtMaker">PIXEL ART MAKER</h1>
+    <div class="inputGridSize">
+
+      <form id="sizePicker">
+        <p class="chooseGridSize"><em>Choose Grid Size :</em></p>
+        Grid Height :
+        <!-- <p></p> -->
+        <input type="number" id="inputHeight" name="height" min="1" value="30">
+        <!-- <p></p> -->
+        Grid Width :
+        <!-- <p></p> -->
+        <input type="number" id="inputWeight" name="width" min="1" value="76">
+        <p></p>
+        <em>Pick A Color :</em>
+
+        <input type="color" id="colorPicker" value="#000000">
+        <p></p>
+        <input type="submit" id="submit" name="submit">
+        <p style="margin:2em 0em 0em 25em;display:inline-block">Help!</p>
+        <i class="far fa-question-circle helpIcon"></i>
+      </form>
+
+    </div>
+
+  </div>
+
+  <div id="pixelCanvasDiv">
+
+    <h2>Design Canvas</h2>
+    <button class="button buttonEdit" type="button"><span>Edit</span></button>
+    <button class="button buttonExit" type="button"><span>Exit</span></button>
+
+    <form id="editSizePicker">
+      <input type="number" id="editInputHeight" class="editInput" name="height" min="1">
+      <input type="number" id="editInputWeight" class="editInput" name="width" min="1">
+      <input type="color" id="editColorPicker" value="#000000">
+    </form>
+
+    <table id="pixelCanvas">
+
+    </table>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+.buttonEdit {
+    display: inline;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    /* padding: 20px; */
+    width: 4em;
+    height: 2em;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0% 0% 0% 64%;
+    position: relative;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  .buttonExit {
+    display: inline;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    /* padding: 20px; */
+    width: 4em;
+    height: 2em;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0% 5% 0% 2%;
+    position: relative;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  #submit {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: limegreen;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    /*padding: 20px;*/
+    width: 110px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    /*margin: 0% 5% 0% 2%;*/
+    margin: 1em 0em 0em 0em;
+    position: relative;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  .helpIcon {
+    margin: 0em 0em 0em 1em;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    margin: 8% 0% 8% 10%;
+  }
+  
+  .backgroundGradient {
+    background-image: radial-gradient(
+      circle,
+      #232323,
+      #1e1e1e,
+      #1a1a1a,
+      #151515,
+      #101010
+    );
+  }
+  
+  #titlePixelArtMaker {
+    margin: 0em 2em 2em 1.5em;
+    font: 400 100px/1.3 "Lobster Two", Helvetica, sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .inputGridSize {
+    display: block;
+  }
+  
+  #sizePicker {
+    display: inline-block;
+    border-style: solid;
+    border-radius: 2em;
+    border-color: #ffffff;
+    width: 37em;
+    height: 15em;
+    margin: -11% 0% 0% 12%;
+    padding: 1em 7em 0em 7em;
+    color: #ffffff;
+    font-size: 1em;
+  }
+  
+  #editSizePicker {
+    display: none;
+  }
+  
+  #colorPicker {
+    margin: 0em 0em 0em 3em;
+  }
+  
+  #editColorPicker {
+    margin: 0em 0em 0em 3em;
+  }
+  
+  #inputHeight {
+    margin: 1em 3em 1em 1em;
+  }
+  
+  #inputWeight {
+    margin: 1em 0em 1em 1em;
+  }
+  
+  #editInputHeight {
+    margin: 1em 3em 1em 1em;
+  }
+  
+  #editInputWeight {
+    margin: 1em 0em 1em 1em;
+  }
+  
+  #pixelCanvasDiv {
+    display: none;
+    margin: -5% 0% 0% 0%;
+  }
+  
+  h2 {
+    display: none;
+    color: white;
+    font-style: italic;
+  }
+  
+  #pixelCanvas {
+    empty-cells: hide;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+  }
+  
+  .blankRow {
+    border: 1px solid white;
+    background-color: #ffffff;
+  }
+  
+  .blankColumn {
+    border: 1px solid black;
+    height: 0.7em;
+    width: 0.7em;
+  }
+  
